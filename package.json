@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:next\" \"npm run dev:server\"",
     "dev:next": "next dev",
-    "dev:server": "nodemon --exec ts-node server/index.ts",
+  "dev:server": "nodemon --exec ts-node -P server/tsconfig.json server/index.ts",
     "build": "next build && npm run build:server",
     "build:server": "tsc -p server/tsconfig.json",
     "start": "next start",
