@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: referral-backend
+    env: node
+    plan: free
+    rootDir: .
+    buildCommand: npm install && npm run build:server
+    startCommand: npm run start:server
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        sync: false

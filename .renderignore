@@ -1,0 +1,9 @@
+# Exclude frontend and local artifacts from Render build context
+app/
+components/
+lib/
+public/
+.next/
+# Common ignores (Render also respects .gitignore)
+node_modules/
+.git/
