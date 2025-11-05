@@ -1,2 +1,6 @@
 server/
 server/**
+render.yaml
+.renderignore
+Dockerfile
+**/Dockerfile

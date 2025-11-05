@@ -7,6 +7,7 @@
     "dev:next": "next dev",
   "dev:server": "nodemon --exec ts-node -P server/tsconfig.json server/index.ts",
     "build": "next build && npm run build:server",
+    "vercel-build": "next build",
     "build:server": "tsc -p server/tsconfig.json",
     "start": "next start",
     "start:server": "node server/dist/index.js",
